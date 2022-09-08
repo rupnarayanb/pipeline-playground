@@ -18,11 +18,11 @@ jobs:
   # This workflow contains a single job called "build"
  test:
   runs-on: ubuntu-latest
-   steps:
-     - name: "☁️ checkout repository"
-     uses: actions/checkout@v2
+  steps:
+    - name: "☁️ checkout repository"
+    uses: actions/checkout@v2
 
-     - name: "🔧 setup node"
+    - name: "🔧 setup node"
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 16
