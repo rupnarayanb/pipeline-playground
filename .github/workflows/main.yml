@@ -20,7 +20,7 @@ jobs:
   name: Test and Lint
   runs-on: ubuntu-latest
     steps: 
-     - name : "checkout repo"
+     - name: "☁️ checkout repository"
      uses: actions/checkout@v2
 
      - name: "🔧 setup node"
