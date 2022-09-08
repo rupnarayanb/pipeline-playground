@@ -30,7 +30,7 @@ jobs:
   - name: "🔧 install npm@latest"
     run: npm i -g npm@latest
 
-  - name: "📦 install dependencies"
+  - name: "📦 npm install"
     uses: bahmutov/npm-install@v1
 
   - name: "🔍 run tests"
