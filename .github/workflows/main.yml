@@ -33,8 +33,12 @@ jobs:
   - name: "📦 npm install"
     uses: bahmutov/npm-install@v1
 
+  ‐ name: Setup
+    run: npm ci
+
   - name: "🔍 run tests"
-    run: npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+    run: |
+          npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
 
   - name: "🔍 run lint"
     run: npm run lint
